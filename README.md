@@ -22,11 +22,25 @@ docker-compose -f docker-compose.yaml up
 docker-compose -f docker-compose.yaml exec postgres env PGOPTIONS="--search_path=campaigns" bash -c 'psql -U $POSTGRES_USER postgres'
 ```
 
-Quick guide to psql
+### Consume messages from the Kafka topic
+
+```sh
+docker-compose -f docker-compose.yaml exec kafka /kafka/bin/kafka-console-consumer.sh \
+    --bootstrap-server kafka:9092 \
+    --from-beginning \
+    --property print.key=true \
+    --topic dbserver1.campaigns.customers
+```
+
+TODO: Quick guide to psql
 
 ## Useful documentation
 
 TODO
+
+## TODOs
+
+1. aaaa
 
 ## Acknowledgements
 
