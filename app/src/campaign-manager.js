@@ -31,5 +31,6 @@ module.exports = function(campaignId, lineItemId, campaignConfig) {
 
   // Now imagine, that it's now being sent to some magical
   // (and very important) campaign server (ノ°∀°)ノ⌒･*:.｡. .｡.:*･゜ﾟ･*☆	
+  console.log(`Campaign ${campaignId} line item ${lineItemId} updated! :D`);
   return true;
 }
