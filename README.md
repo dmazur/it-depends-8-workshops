@@ -80,8 +80,6 @@ Windows (PowerShell):
 curl -i -X GET -H "Accept:application/json" -H  "Content-Type:application/json" http://localhost:8083/connectors/
 ```
 
-TODO: Quick guide to psql
-
 ## Useful documentation
 
 * [Quick guide to psql / PostgreSQL](docs/psql.md)
